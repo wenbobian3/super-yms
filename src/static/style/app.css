@@ -1,0 +1,22 @@
+.app-h1{
+    text-align: center;
+}
+
+.ant-input{
+    width:250px;
+}
+.ant-col-sm-6{
+    width:40%;
+}
+.ant-col-sm-14{
+    width:50px;
+}
+.ant-checkbox-wrapper{
+    margin-left: 200px;
+}
+.ant-btn-lg{
+    margin-left:200px
+}
+.ant-form-item-control{
+    margin-left:40%
+}

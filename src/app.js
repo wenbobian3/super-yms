@@ -1,14 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import 'antd/dist/antd.css'
 
-// import './static/js/layui.js'
+import {HashRouter as Router} from 'react-router-dom'
 
-// import './static/js/nav.js'
-// import './static/js/index.js'
-
-// import './static/style/layui.css'
-// import './static/style/global.css'
+import './static/style/app.css'
 
 import App from './components/App'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Router><App></App></Router> , document.getElementById('root'));
