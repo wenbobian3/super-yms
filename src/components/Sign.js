@@ -52,6 +52,8 @@ class RegistrationForm extends Component {
         if( res.data.data.success ){
             alert( '注册成功' )
             this.props.history.push('/login')
+        }else{
+            alert( '注册失败请重试' )
         }
     })
   }
@@ -158,7 +160,7 @@ class RegistrationForm extends Component {
           <Button type="primary" htmlType="submit" size="large">Register</Button>
         </FormItem>
 
-        <Link to="/login"><Button type="primary">已有账号请登录</Button></Link>
+        <Link to="/login"><Button type="danger">已有账号请登录</Button></Link>
         
       </Form>
     );

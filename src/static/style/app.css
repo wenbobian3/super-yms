@@ -14,9 +14,13 @@
 .ant-checkbox-wrapper{
     margin-left: 200px;
 }
-.ant-btn-lg{
-    margin-left:200px
-}
+
 .ant-form-item-control{
     margin-left:40%
+}
+.ant-btn-danger{
+    margin-left:40%;
+}
+.ant-btn-lg{
+    margin-left:200px
 }

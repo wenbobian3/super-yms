@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import axios from 'axios'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 const FormItem = Form.Item;
@@ -25,6 +26,8 @@ class NormalLoginForm extends React.Component {
       if( res.data.data.success ){
         alert( '登陆成功' )
         this.props.history.push('/bbw')
+      }else{
+        alert('登录失败请重试')
       }
     })
 
@@ -53,8 +56,9 @@ class NormalLoginForm extends React.Component {
           <Button type="primary" htmlType="submit" className="login-form-button">
             Log in
           </Button>
-        
         </FormItem>
+        <Link to="/"><Button type="danger">没有账号请注册</Button></Link>
+        
       </Form>
     );
   }
